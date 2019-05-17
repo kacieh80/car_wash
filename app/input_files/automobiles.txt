@@ -1,0 +1,13 @@
+Car 111112
+Car 111113
+Truck 111114 bed_down muddy
+Truck 111115 bed_up not_muddy
+Truck 111116 bed_up muddy
+Truck 111117 bed_down not_muddy
+Car 111112
+Truck 111114 bed_up muddy
+Truck 111115 bed_up not_muddy
+Truck 111115 bed_up muddy
+Car 111111
+SUV 111118
+Truck 111111 bed_up not_muddy
