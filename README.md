@@ -13,11 +13,18 @@ This is a simple python program that takes an input file of vehicles and runs th
 To run this application you'll need python3 and virtualenv, download the code from this repository and run the following commands:
 
 `cd car_wash`
+
 `virtualenv -p python3 app`
+
 `cd app`
+
 `source bin/activate`
+
 `python3 car_wash.py automobile.txt`
 
+
 For tests
+
 `pip3 install requierments.txt`
+
 `python3 -m unittest`
