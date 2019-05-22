@@ -8,7 +8,7 @@ class Automobile(object):
 
     def can_wash(self):
         """ Check to see if we can wash this automobile """
-        if self._is_stolen():
+        if self.__is_stolen():
             msg = "Stolen vehicle: {} was not washed.".format(
                     self.license_plate)
             return False, msg
@@ -18,7 +18,7 @@ class Automobile(object):
         """ Calculates the price the automobile should pay for a car wash """
         raise NotImplementedError()
 
-    def _is_stolen(self):
+    def __is_stolen(self):
         """ Check to see if the car is stolen """
 
         if self.license_plate == '111111':

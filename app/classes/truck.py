@@ -29,9 +29,9 @@ class Truck(Automobile):
 
     def can_wash(self):
         """ Check to see if we can wash this automobile """
-        if self._is_stolen():
-            return False, "Stolen vehicle: {} was not washed.".format(
-                    self.license_plate)
+        can_wash, msg = super(Truck, self).can_wash()
+        if not can_wash:
+            return False, msg)
 
         if self.bed_down:
             return False, "Truck: {} has bed down, was not washed.".format(
