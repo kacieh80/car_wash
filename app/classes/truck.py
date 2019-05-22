@@ -31,7 +31,7 @@ class Truck(Automobile):
         """ Check to see if we can wash this automobile """
         can_wash, msg = super(Truck, self).can_wash()
         if not can_wash:
-            return False, msg)
+            return False, msg
 
         if self.bed_down:
             return False, "Truck: {} has bed down, was not washed.".format(

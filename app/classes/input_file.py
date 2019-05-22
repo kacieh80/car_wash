@@ -17,7 +17,7 @@ class InputFile(object):
             print( 'Could not find your file.')
             sys.exit(-1)
         try:
-            automobiles = self._parse_file_data(data)
+            automobiles = self.__parse_file_data(data)
         except:
             print ('Something went wrong while parsing your file, \
                     please check your file, and try again.')
@@ -27,7 +27,7 @@ class InputFile(object):
 
         return automobiles
 
-    def _parse_file_data(self, data):
+    def __parse_file_data(self, data):
         """ Parse the meat of the file and return automobiles """
         automobiles = []
 
