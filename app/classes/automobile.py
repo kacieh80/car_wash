@@ -3,6 +3,8 @@
 
 class Automobile(object):
 
+    base_price = 5.00
+
     def __init__(self, **kwargs):
         self.license_plate = kwargs.get("license_plate")
 

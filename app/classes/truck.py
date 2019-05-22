@@ -6,11 +6,12 @@ from classes.automobile import Automobile
 
 class Truck(Automobile):
 
+    base_price = 10.00
+    muddy_truck_add_on = 2.00
+
     def __init__(self, **kwargs):
         """ Set base price and other attributes for car wash """
         super(Truck, self).__init__(**kwargs)
-        self.base_price = 10.00
-        self.muddy_truck_add_on = 2.00
         self.is_muddy = kwargs.get("is_muddy")
         self.bed_down = kwargs.get("bed_down")
 
