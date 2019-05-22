@@ -7,9 +7,10 @@ from classes.truck import Truck
 
 class CarWash(object):
 
+    visited = []
+
     def __init__(self, automobiles):
         self.automobiles = automobiles
-        self.visited = []
 
     def wash_cars(self):
         """ Wash cars in given automobiles """
